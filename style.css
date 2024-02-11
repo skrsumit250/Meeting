@@ -14,7 +14,7 @@ nav{
     height: 10vh;
     display: flex;
 }
-nav img{
+#logo{
     margin: 0.5vw 0vw 0.5vw 2vw;
 }
 #large-ul{
@@ -34,18 +34,30 @@ nav img{
     text-decoration: none;
     padding: 0.5vw 1vw 0.5vw 1vw;
 }
-#large-ul a:hover{
+#large-ul li:hover{
     background:#3EA6FF;
     color: white;
     border-radius: 5%;
 }
-
+button{
+    border: none;
+    background-color: white;
+}
+.toggle{
+    display: none;
+}
+button img{
+    width: 10vw;
+    margin-right: 5vw;
+}
 #small-ul{
+    display: none;
     position: fixed;
     background: white;
-    top: 6rem;
+    width: 80%;
+    top: 4.2rem;
     z-index: 3;
-    padding: 5vw 1vw 5vw 1vw;
+    padding: 1vw 10vw 10vw 10vw;
 }
 #small-ul li{
     padding:2vw;
@@ -60,7 +72,7 @@ nav img{
     text-decoration: none;
     padding: 0.5vw 1vw 0.5vw 1vw;
 }
-#small-ul a:hover{
+#small-ul li:hover{
     background:#3EA6FF;
     color: white;
     border-radius: 5%;
@@ -114,7 +126,7 @@ nav img{
     #large-ul{
         display: none;
     }
-    nav img{
+    #logo{
         padding: 2vw;
     }
     .banner{
@@ -128,6 +140,11 @@ nav img{
     }
     .heading h3{
         font-size: 5vw;
+    }
+    .toggle{
+        width: 90%;
+        display: flex;
+        justify-content: end;
     }
 }
 
