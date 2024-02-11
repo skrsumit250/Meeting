@@ -1,0 +1,66 @@
+.col{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.row{
+  margin: 5vw auto 5vw auto;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  
+}
+.speaker{
+  margin: auto;
+  padding-bottom: 10px;
+  width: 20%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.speaker img{
+  width: 100%;
+  
+}
+.speaker h3{
+  color: #000000;
+  font-style: 'inria serif';
+  font-size: 1.7vw;
+}
+.speaker li{
+  list-style-type: none;
+}
+.speaker a{
+  color: #3EA6FF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2vw;
+}
+.speaker a:hover{
+  color: black;
+}
+.head h1{
+  margin: 5vh 0 2vh 0;
+  text-align: center;
+  color: #000000;
+  font-style: 'inria serif';
+  font-size: 3vw;
+}
+.head hr{
+  background-color: #000000;
+  border: none;
+  height: 2px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  @media screen and (max-width: 800px) {
+    .head h1{
+        font-size: 7vw;
+        margin: 1vh 0 1vh 0;
+    }
+    .speaker{
+      width: 25%;
+    }
+  }

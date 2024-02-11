@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script src="script.js"></script>
+    <title>Home</title>
 </head>
 <body>
     <!-- NAVBAR  -->
     <section>
         <nav>
-            <img src="IITG.jpg" id="logo">
+            <img src="assets/IITG.jpg" id="logo">
             <ul id="large-ul">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="schedule.html">SCHEDULE</a></li>
@@ -21,8 +22,8 @@
                 <li><a href="form.html">REGISTRATION</a></li>
             </ul>
             <div class="toggle">
-                <button onclick="toggleButtons()" id="button1"><img src="menu.png"></button>
-                <button onclick="toggleButtons()" id="button2" style="display: none;"><img src="close.png"></button>
+                <button onclick="toggleButtons()" id="button1"><img src="assets/menu.png"></button>
+                <button onclick="toggleButtons()" id="button2" style="display: none;"><img src="assets/close.png"></button></button>
                 <ul id="small-ul">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="schedule.html">SCHEDULE</a></li>
@@ -33,7 +34,7 @@
         </nav>
         <!-- Banner  -->
         <div class="banner">
-            <img src="BG.jpg" alt="">
+            <img src="assets/BG.jpg" alt="">
             <div class="cover"></div>
             <div class="heading">
                 <h1>12<sup>th</sup> RNA GROUP MEETING</h1>
@@ -62,23 +63,4 @@
         </div>
     </div>
 </body>
-<script>
-    function toggleButtons() {
-            var button1 = document.getElementById('button1');
-            var button2 = document.getElementById('button2');
-            var toggle = document.getElementById('small-ul');
-
-            if (button1.style.display !== 'none') {
-                // Button 1 is visible, hide it and show Button 2 and nav-form
-                button1.style.display = 'none';
-                button2.style.display = 'block';
-                toggle.style.display = 'block';
-            } else {
-                // Button 2 and nav-form are visible, hide them and show Button 1
-                button1.style.display = 'block';
-                button2.style.display = 'none';
-                toggle.style.display = 'none';
-            }
-        }
-</script>
 </html>

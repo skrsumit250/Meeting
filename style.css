@@ -34,7 +34,7 @@ nav{
     text-decoration: none;
     padding: 0.5vw 1vw 0.5vw 1vw;
 }
-#large-ul li:hover{
+#large-ul a:hover{
     background:#3EA6FF;
     color: white;
     border-radius: 5%;
@@ -75,7 +75,6 @@ button img{
 #small-ul li:hover{
     background:#3EA6FF;
     color: white;
-    border-radius: 5%;
 }
 /* CSS FOR BANNER  */
 .banner{
