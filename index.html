@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR  -->
+    <section>
+        <nav>
+            <img src="IITG.jpg">
+            <ul id="large-ul">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="speaker.html">SPEAKERS</a></li>
+                <li><a href="form.html">REGISTRATION</a></li>
+            </ul>
+            <button onclick="toggleButtons()" id="button1"><img src="menu.png" width="10%"></button>
+            <button onclick="toggleButtons()" id="button2" style="display: none;"><img src="close.png" width="10%"></button>
+            <ul id="small-ul">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="speaker.html">SPEAKERS</a></li>
+                <li><a href="form.html">REGISTRATION</a></li>
+            </ul>
+        </nav>
+        <!-- Banner  -->
+        <div class="banner">
+            <img src="BG.jpg" alt="">
+            <div class="cover"></div>
+            <div class="heading">
+                <h1>12<sup>th</sup> RNA GROUP MEETING</h1>
+                <h3>IIT GUWAHATI, 22-24 MAY 2024</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- WELCOME DESCRIPTION  -->
+    <div class="content">
+        <h1>About</h1>
+        <p>The biennial RNA group meeting brings together brilliant Indian researchers including senior and young scientists, PhD students and Postdoctoral fellows for an immersive and exciting deliberations on frontier areas in RNA Biology. The 12th edition of this meeting will be held on May 22-24 at IIT Guwahati. We welcome you to this exciting meeting!</p>
+        <br><br>
+        <h4>Program:</h4><p>To be updated</p>
+    </div>
+
+    <!-- IIT GUWAHATI DESCRIPTION -->
+    <div class="venue">
+        <div class="venue-description">
+            <h1>Venue : IIT Guwahati</h1>
+            <p>Indian Institute of Technology Guwahati is situated on the banks of the majestic river Brahmaputra and its 700 acres are interspersed with hillocks, lakes and vast open spaces. The Institute has a friendly and pleasant environment which facilitates multi-dimensional growth of the individuals in the campus. Within a short period of time, IIT Guwahati has been able to build up world class infrastructure for carrying out advanced research and is equipped with state-of-the-art scientific and engineering instruments. IIT Guwahati gained rank 41 globally in the ‘Research Citations per Faculty’ category and overall 395 rank in the QS World University Rankings 2022 released recently. IIT Guwahati has retained the 7th position among the best engineering institutions of the country in the ‘India Rankings 2021’ declared by the National Institutional Ranking Framework (NIRF) of the Union Ministry of Education. IIT Guwahati has been also ranked 2nd in the ‘Swachhata Ranking’ conducted by the Govt. of India.</p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/92C1QU4jr30?si=cSAxA4REgbWlUTot" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+<script>
+    function toggleButtons() {
+            var button1 = document.getElementById('button1');
+            var button2 = document.getElementById('button2');
+            var navForm = document.getElementById('dropdown');
+
+            if (button1.style.display !== 'none') {
+                // Button 1 is visible, hide it and show Button 2 and nav-form
+                button1.style.display = 'none';
+                button2.style.display = 'block';
+                navForm.style.display = 'block';
+            } else {
+                // Button 2 and nav-form are visible, hide them and show Button 1
+                button1.style.display = 'block';
+                button2.style.display = 'none';
+                navForm.style.display = 'none';
+            }
+        }
+</script>
+</html>
