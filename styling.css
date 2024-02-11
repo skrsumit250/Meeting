@@ -173,6 +173,7 @@
   .box{
     margin-bottom: 10px;
     border-radius: 5%;
+    padding-left: 20px;
   }
   .right{
     left: 0;
