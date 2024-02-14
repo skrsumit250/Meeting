@@ -146,6 +146,11 @@ button img{
         justify-content: end;
     }
 }
+@media screen and (max-width: 800px) {
+    .banner img{
+        width: 90%;
+    }
+}
 
  /* CSS FOR CONTENT  */
 .content{
