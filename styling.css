@@ -182,3 +182,19 @@
     display: none;
   }
 }
+
+.sponser{
+  padding: 0vw 5vw 2vw 5vw;
+}
+.sponser img{
+  width: 13vw;
+  padding: 2vw;
+}
+.sponser-inner{
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .sponser img{
+    width: 25vw;
+  }
+}
