@@ -201,13 +201,3 @@
     width: 25vw;
   }
 }
-.program_top{
-  width: 80%;
-  padding: 5vw;
-}
-.program_top a{
-    color:#3EA6FF ;
-}
-.program_top a:hover{
-  color:red ;
-}
