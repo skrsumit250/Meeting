@@ -201,3 +201,41 @@
     width: 25vw;
   }
 }
+
+/* Styling for latest news  */
+.latest{
+  width: 70%;
+  margin: 40px auto;
+  padding: 2rem;
+  height: auto;
+  background-color: white;
+  box-shadow:5px 5px 20px 1px black
+}
+.latest h1{
+  font-size: 2rem;
+  text-decoration: overline;
+}
+.latest p{
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.latest img{
+  margin-bottom: -4px;
+}
+.latest a{
+  color: #3EA6FF;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .latest{
+    width: 80%;
+    border: none;
+    box-shadow: none;
+  }
+  .latest p{
+    font-size: 0.8rem;
+  }
+  .latest h1{
+    font-size: 2rem;
+  }
+}

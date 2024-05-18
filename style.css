@@ -137,14 +137,21 @@ footer a{
     text-decoration: underline;
 }
 @media screen and (max-width: 600px) {
+    .banner{
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    .banner{
+        height: 35vh;
+    }
+}
+@media screen and (max-width: 600px) {
     #large-ul{
         display: none;
     }
     #logo{
         padding: 2vw;
-    }
-    .banner{
-        height: 30vh;
     }
     .banner img{
         width: 90%;
@@ -178,6 +185,7 @@ footer a{
 }
 .content a{
     color: #3EA6FF;
+    font-size: 2rem;
 }
 .content a:hover{
     color: red;
@@ -271,6 +279,9 @@ iframe{
     }
     .content{
         width: 90%;
+    }
+    .content a{
+        font-size: 1rem;
     }
     .org{
         width: 30%;
